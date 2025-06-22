@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1 class="nav-brand">Data analyze</h1>
+    </nav>
+
+    <main class="container">
+      <form id="analyse-list-form">
+        <div class="left">
+          <label class="label" for="analyze-title">Enter your text</label>
+          <textarea
+            rows="3"
+            class="input"
+            required
+            id="analyze-title"
+          ></textarea>
+          <span id="error"></span>
+
+          <label class="label" for="">Your text</label>
+          <p id="userText"></p>
+        </div>
+
+        <div class="right">
+          <button id="analyzeButton" class="btn btn-accent">
+            Analyze
+          </button>
+          <button id="clearButton" class="btn btn-default">
+            Clear table
+          </button>
+        </div>
+      </form>
+      <table class="table" border="1">
+        <thead>
+          <tr>
+            <th width="200px">Variation</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First character</td>
+            <td id="answer5"></td>
+          </tr>
+          <tr>
+            <td>Words count</td>
+            <td id="answer1"></td>
+          </tr>
+          <tr>
+            <td>Number of characters</td>
+            <td id="answer2"></td>
+          </tr>
+          <tr>
+            <td>Max length word</td>
+            <td id="answer3"></td>
+          </tr>
+          <tr>
+            <td>Reverse word</td>
+            <td id="answer4"></td>
+          </tr>
+          <tr>
+            <td>Sentences count</td>
+            <td id="answer6"></td>
+          </tr>
+          <tr>
+            <td>Unique word count</td>
+            <td id="answer7"></td>
+          </tr>
+          <tr>
+            <td>Words in alphabetical order</td>
+            <td id="answer8"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>
